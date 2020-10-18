@@ -56,7 +56,10 @@ msgctxt "#31007"
 msgid "Unwatched movies"
 msgstr ""
 
-#: Missing string 31108
+#: /xml/SkinSettings.xml
+msgctxt "#31008"
+msgid "Hide Categories"
+msgstr ""
 
 #: /xml/MyVideoNav.xml
 msgctxt "#31009"
@@ -2291,4 +2294,9 @@ msgstr ""
 #: /xml/Variables.xml
 msgctxt "#40314"
 msgid "Crew member in TV show"
+msgstr ""
+
+#: /xml/Skinsettings.xml
+msgctxt "#40315"
+msgid "Own Menue"
 msgstr ""

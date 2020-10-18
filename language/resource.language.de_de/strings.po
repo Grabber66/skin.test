@@ -56,6 +56,11 @@ msgctxt "#31007"
 msgid "Unwatched movies"
 msgstr "Ungesehene Filme"
 
+#: /xml/SkinSettings.xml
+msgctxt "#31008"
+msgid "Hide Categories"
+msgstr "Kategorien ausblenden"
+
 #: /xml/MyVideoNav.xml
 msgctxt "#31009"
 msgid "Download icons"
@@ -2077,3 +2082,218 @@ msgstr "Ostern Theme"
 msgctxt "#40272"
 msgid "Valentine's Day Theme"
 msgstr "Valentinstag Theme"
+
+#: /xml/Includes_MediaMenu.xml
+msgctxt "#40273"
+msgid "Show channel groups"
+msgstr "Kanalgruppen anzeigen"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40274"
+msgid "Scope mode for constant image height (CIH) setup"
+msgstr "Bereichsmodus für die Einrichtung einer konstanten Bildhöhe (CIH)"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40275"
+msgid "2:35:1 (1920x817)"
+msgstr "2:35:1 (1920x817)"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40276"
+msgid "2:40:1 (1920x800)"
+msgstr "2:40:1 (1920x800)"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40277"
+msgid "1:77:1 (1920x1080)"
+msgstr "1:77:1 (1920x1080)"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40278"
+msgid "1:85:1 (1920x1038)"
+msgstr "1:85:1 (1920x1038)"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40279"
+msgid "2:37:1 (1920x810)"
+msgstr "2:37:1 (1920x810)"
+
+#: /xml/Variables.xml
+msgctxt "#40280"
+msgid "Scope mode"
+msgstr "Bereichsmodus"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40281"
+msgid "My ratings and scrapers ratings"
+msgstr "Meine Bewertungen und Scrapers ratings"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40282"
+msgid "Scrapers ratings text color"
+msgstr "Scrapers ratings Textfarbe"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40283"
+msgid "My ratings text color"
+msgstr "Meine Bewertungen Textfarbe"
+
+#: /xml/Includes.xml
+msgctxt "#40284"
+msgid "Loading..."
+msgstr "Lade..."
+
+#: /xml/SkinSettings.xml
+msgctxt "#40285"
+msgid "Parental control related settings."
+msgstr "Einstellungen zur Kindersicherung."
+
+#: /xml/Custom_1101_SettingsList.xml
+msgctxt "#40286"
+msgid "Select Resolution"
+msgstr "Wähle Auflösung"
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#40287"
+msgid "Date added"
+msgstr "hinzugefügt am"
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#40288"
+msgid "Show extended info"
+msgstr "Erweiterte Informationen anzeigen"
+
+#: /xml/Variables.xml
+msgctxt "#40289"
+msgid "By"
+msgstr "Bye"
+
+#: /xml/Variables.xml
+msgctxt "#40290"
+msgid "Movies from movie set"
+msgstr "Filme aus dem Filmset"
+
+#: /xml/Custom_1132_MoviesSetsInfo.xml
+msgctxt "#40291"
+msgid "Press [B]DOWN[/B] to show info from selected movie"
+msgstr "Drücken Sie [B] DOWN [/ B], um Informationen zum ausgewählten Film anzuzeigen"
+
+#: /xml/Variables.xml
+msgctxt "#40292"
+msgid "Lists settings"
+msgstr "Listet die Einstellungen auf"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40293"
+msgid "Actors list"
+msgstr "Actors Liste"
+
+#: /xml/script-script.extendedinfo-DialogVideoInfo.xml
+msgctxt "#40294"
+msgid "Episode count"
+msgstr "Episodenzähler"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40295"
+msgid "Movies from director"
+msgstr "Filme vom Regisseur"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40296"
+msgid "Similar movies"
+msgstr "Ähnliche Filme"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40297"
+msgid "Movies from studio"
+msgstr "Filme aus dem Studio"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40298"
+msgid "Next Up episodes"
+msgstr "Nächste Episode"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40299"
+msgid "Similar TV shows"
+msgstr "Ähnliche Fernsehsendungen"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40300"
+msgid "Pictures list"
+msgstr "Bildliste"
+
+#: /xml/Variables.xml
+msgctxt "#40301"
+msgid "Albums from library"
+msgstr "Alben aus der Bibliothek"
+
+#: /xml/Variables.xml
+msgctxt "#40302"
+msgid "Complete discography"
+msgstr "Komplette Diskographie"
+
+#: /xml/Variables.xml
+msgctxt "#40303"
+msgid "Songs from album"
+msgstr "Songs vom Album"
+
+#: /xml/DialogMusicInfo.xml
+msgctxt "#40304"
+msgid "Press [B]OK[/B] to show back thumb"
+msgstr "Drücken Sie [B]OK[/B], für Hintergrundthumb"
+
+#: /xml/script-script.extendedinfo-DialogVideoInfo.xml
+msgctxt "#40305"
+msgid "Episode of the season"
+msgstr "Folge der Saison"
+
+#: /xml/Variables.xml
+msgctxt "#40306"
+msgid "Posters"
+msgstr "Poster"
+
+#: /xml/Variables.xml
+msgctxt "#40307"
+msgid "Fanarts"
+msgstr "Fanarts"
+
+#: /xml/Variables.xml
+msgctxt "#40308"
+msgid "Resume playback at"
+msgstr "Setzen Wiedergabe fort ab"
+
+#: /xml/script-script.extendedinfo-DialogInfo.xml
+msgctxt "#40309"
+msgid "Press [B]OK[/B] to show biography"
+msgstr "Drücken Sie [B]OK[/B], für Biography"
+
+#: /xml/script-script.extendedinfo-DialogInfo.xml
+msgctxt "#40310"
+msgid "Website"
+msgstr "Website"
+
+#: /xml/Variables.xml
+msgctxt "#40311"
+msgid "Role in movie"
+msgstr "Rolle im Film"
+
+#: /xml/Variables.xml
+msgctxt "#40312"
+msgid "Crew member in movie"
+msgstr "Crewmember im Film"
+
+#: /xml/Variables.xml
+msgctxt "#40313"
+msgid "Role in TV show"
+msgstr "Rolle in Fernsehsendung"
+
+#: /xml/Variables.xml
+msgctxt "#40314"
+msgid "Crew member in TV show"
+msgstr "Crewmember in Fernsehsendung"
+
+#: /xml/Skinsettings.xml
+msgctxt "#40315"
+msgid "Own Menue"
+msgstr "eigenes Hauptmenü"

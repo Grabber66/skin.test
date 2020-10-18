@@ -13,7 +13,7 @@
 			<visible>!Skin.HasSetting(DebugGrid)</visible>
 		</control>
 		<!-- Debug Info -->
-<!--
+
 		<control type="group">
 			<visible>!Skin.HasSetting(HideDebugInfo)</visible>
 			<control type="grouplist">
@@ -917,6 +917,6 @@
 				<label>$INFO[Container.FolderPath,$LOCALIZE[15311] ,]</label>
 			</control>
 		</control>
--->
+
 	</controls>
 </window>

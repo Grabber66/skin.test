@@ -874,6 +874,7 @@
 					<param name="width" value="230" />
 				</include>
 				<left>-200</left>
+				<onleft>SetFocus(9000,0,absolute)</onleft>
 				<animation effect="slide" start="0,0" end="200,0" time="400" tween="sine" easing="inout">WindowOpen</animation>
 				<animation effect="slide" start="200,0" end="0,0" time="400" tween="sine" easing="inout">WindowClose</animation>
 				<animation effect="slide" start="0,0" end="200,0" time="400" tween="sine" easing="inout">Focus</animation>
@@ -1110,6 +1111,7 @@
 					<top>5</top>
 					<onup>SetFocus(9000,99,absolute)</onup>
 					<ondown>SetFocus(9000,0,absolute)</ondown>
+					<onleft>SetFocus(9000,0,absolute)</onleft>
 					<onright>2000</onright>
 					<align>justify</align>
 					<include content="IconButton">

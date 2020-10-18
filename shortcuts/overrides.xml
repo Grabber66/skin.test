@@ -33,19 +33,19 @@
     <widgetdefault labelID="weather">WeatherWidget</widgetdefault>
     
     <!-- Additionnal Widgets -->
-    <widget label="427" icon="icons/sidemenu/disc.png">DiscWidget</widget>
-    <widget label="342" icon="icons/sidemenu/movies.png">MoviesWidget</widget>
-    <widget label="20343" icon="icons/sidemenu/tv.png">TVShowsWidget</widget>
-    <widget label="2" icon="icons/sidemenu/music.png" >MusicWidget</widget>
-    <widget label="20389" icon="icons/sidemenu/musicvideos.png">MusicVideosWidget</widget>
-    <widget label="19020" icon="icons/sidemenu/livetv.png">LiveTVWidget</widget>
-    <widget label="19021" icon="icons/sidemenu/radio.png">RadioWidget</widget>
-    <widget label="15016" icon="icons/sidemenu/games.png">GamesWidget</widget>
-    <widget label="24001" icon="icons/sidemenu/addons.png">AddonsWidget</widget>
-    <widget label="1" icon="icons/sidemenu/pictures.png">PicturesWidget</widget>
-    <widget label="3" icon="icons/sidemenu/videos.png">VideoWidget</widget>
-    <widget label="10134" icon="icons/sidemenu/favourites.png">FavoritesWidget</widget>
-    <widget label="8" icon="icons/sidemenu/weather.png">WeatherWidget</widget>
+    <widget label="427" icon="special://skin/extras/icons/sidemenu/disc.png">DiscWidget</widget>
+    <widget label="342" icon="special://skin/extras/icons/sidemenu/movies.png">MoviesWidget</widget>
+    <widget label="20343" icon="special://skin/extras/icons/sidemenu/tv.png">TVShowsWidget</widget>
+    <widget label="2" icon="special://skin/extras/icons/sidemenu/music.png" >MusicWidget</widget>
+    <widget label="20389" icon="special://skin/extras/icons/sidemenu/musicvideos.png">MusicVideosWidget</widget>
+    <widget label="19020" icon="special://skin/extras/icons/sidemenu/livetv.png">LiveTVWidget</widget>
+    <widget label="19021" icon="special://skin/extras/icons/sidemenu/radio.png">RadioWidget</widget>
+    <widget label="15016" icon="special://skin/extras/icons/sidemenu/games.png">GamesWidget</widget>
+    <widget label="24001" icon="special://skin/extras/icons/sidemenu/addons.png">AddonsWidget</widget>
+    <widget label="1" icon="special://skin/extras/icons/sidemenu/pictures.png">PicturesWidget</widget>
+    <widget label="3" icon="special://skin/extras/icons/sidemenu/videos.png">VideoWidget</widget>
+    <widget label="10134" icon="special://skin/extras/icons/sidemenu/favourites.png">FavoritesWidget</widget>
+    <widget label="8" icon="special://skin/extras/icons/sidemenu/weather.png">WeatherWidget</widget>
     <widget label="40166" icon="icons/PersonalList.png">PersonalWidgetList</widget>
     <widget label="40205" icon="icons/PersonalPanel.png">PersonalWidgetPanel</widget>
     
@@ -387,19 +387,19 @@
     </groupings>
     <widget-groupings>
         <node label="40127" condition="!String.IsEmpty(Window(home).Property(WidgetVisibility))">
-            <shortcut label="427" icon="icons/sidemenu/disc.png" widget="DiscWidget" condition="System.HasMediaDVD">DiscWidget</shortcut>
-            <shortcut label="342" icon="icons/sidemenu/movies.png" widget="MoviesWidget">MoviesWidget</shortcut>
-            <shortcut label="20343" icon="icons/sidemenu/tv.png" widget="TVShowsWidget">TVShowsWidget</shortcut>
-            <shortcut label="2" icon="icons/sidemenu/music.png" widget="MusicWidget">MusicWidget</shortcut>
-            <shortcut label="20389" icon="icons/sidemenu/musicvideos.png" widget="MusicVideosWidget">MusicVideosWidget</shortcut>
-            <shortcut label="19020" icon="icons/sidemenu/livetv.png" widget="LiveTVWidget">LiveTVWidget</shortcut>
-            <shortcut label="19021" icon="icons/sidemenu/radio.png" widget="RadioWidget">RadioWidget</shortcut>
-            <shortcut label="15016" icon="icons/sidemenu/games.png" widget="GamesWidget" condition="System.GetBool(gamesgeneral.enable)">GamesWidget</shortcut>
-            <shortcut label="24001" icon="icons/sidemenu/addons.png" widget="AddonsWidget">AddonsWidget</shortcut>
-            <shortcut label="1" icon="icons/sidemenu/pictures.png" widget="PicturesWidget">PicturesWidget</shortcut>
-            <shortcut label="3" icon="icons/sidemenu/videos.png" widget="VideoWidget">VideoWidget</shortcut>
-            <shortcut label="10134" icon="icons/sidemenu/favourites.png" widget="FavoritesWidget">FavoritesWidget</shortcut>
-            <shortcut label="8" icon="icons/sidemenu/weather.png" widget="WeatherWidget">WeatherWidget</shortcut>
+            <shortcut label="427" icon="special://skin/extras/icons/sidemenu/disc.png" widget="DiscWidget" condition="System.HasMediaDVD">DiscWidget</shortcut>
+            <shortcut label="342" icon="special://skin/extras/icons/sidemenu/movies.png" widget="MoviesWidget">MoviesWidget</shortcut>
+            <shortcut label="20343" icon="special://skin/extras/icons/sidemenu/tv.png" widget="TVShowsWidget">TVShowsWidget</shortcut>
+            <shortcut label="2" icon="special://skin/extras/icons/sidemenu/music.png" widget="MusicWidget">MusicWidget</shortcut>
+            <shortcut label="20389" icon="special://skin/extras/icons/sidemenu/musicvideos.png" widget="MusicVideosWidget">MusicVideosWidget</shortcut>
+            <shortcut label="19020" icon="special://skin/extras/icons/sidemenu/livetv.png" widget="LiveTVWidget">LiveTVWidget</shortcut>
+            <shortcut label="19021" icon="special://skin/extras/icons/sidemenu/radio.png" widget="RadioWidget">RadioWidget</shortcut>
+            <shortcut label="15016" icon="special://skin/extras/icons/sidemenu/games.png" widget="GamesWidget" condition="System.GetBool(gamesgeneral.enable)">GamesWidget</shortcut>
+            <shortcut label="24001" icon="special://skin/extras/icons/sidemenu/addons.png" widget="AddonsWidget">AddonsWidget</shortcut>
+            <shortcut label="1" icon="special://skin/extras/icons/sidemenu/pictures.png" widget="PicturesWidget">PicturesWidget</shortcut>
+            <shortcut label="3" icon="special://skin/extras/icons/sidemenu/videos.png" widget="VideoWidget">VideoWidget</shortcut>
+            <shortcut label="10134" icon="special://skin/extras/icons/sidemenu/favourites.png" widget="FavoritesWidget">FavoritesWidget</shortcut>
+            <shortcut label="8" icon="special://skin/extras/icons/sidemenu/weather.png" widget="WeatherWidget">WeatherWidget</shortcut>
         </node>
         <node label="40204" condition="!String.IsEmpty(Window(home).Property(WidgetVisibility))">
             <shortcut label="40166" icon="icons/PersonalList.png" widget="PersonalWidgetList">PersonalWidgetList</shortcut>
