@@ -11,7 +11,7 @@
 		<control type="group">
 			<animation effect="slide" start="0,200" end="0,0" time="300" tween="cubic" easing="out">VisibleChange</animation>
 			<visible>Player.ShowInfo | Window.IsActive(fullscreeninfo) | Player.ShowTime | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !String.IsEmpty(Player.SeekNumeric) | !String.IsEmpty(PVR.ChannelNumberInput) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrchannelguide) | ![Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | Player.Paused + !Window.IsActive(visualisation)]</visible>
-			<visible>!Player.HasGame</visible>
+			<visible>!Player.HasGame + !VideoPlayer.Content(LiveTV)</visible>
 			<bottom>0</bottom>
 			<height>190</height>
 			<control type="image">
@@ -193,6 +193,7 @@
 				<font>font13</font>
 				<shadowcolor>black</shadowcolor>
 			</control>
+<!-- move to PVROverlay
 			<control type="group">
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<control type="group">
@@ -233,6 +234,7 @@
 					<visible>Player.SeekEnabled + !Player.ChannelPreviewActive</visible>
 				</control>
 			</control>
+-->
 			<control type="group">
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 				<control type="progress">
@@ -265,6 +267,7 @@
 				</control>
 			</control>
 			<control type="ranges">
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
 				<left>0</left>
 				<top>70</top>
 				<width>100%</width>
@@ -287,11 +290,11 @@
 		</control>
 		<control type="group">
 			<visible>!Window.IsVisible(playerprocessinfo)</visible>
-			<visible>[Player.ShowInfo | Window.IsActive(fullscreeninfo)] + VideoPlayer.Content(LiveTV)</visible>
+			<visible>[Player.ShowInfo | Window.IsActive(fullscreeninfo)] + !VideoPlayer.Content(LiveTV)</visible>
 			<visible>Player.ShowInfo | Window.IsActive(fullscreeninfo) | !Player.Seeking | !Player.DisplayAfterSeek | !Player.Forwarding | !Player.Rewinding | !Player.Paused</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="250">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="100">Hidden</animation>
-			<animation effect="slide" end="0,-20" time="150" condition="VideoPlayer.Content(LiveTV)">conditional</animation>
+			<animation effect="slide" end="0,-20" time="150" condition="!VideoPlayer.Content(LiveTV)">conditional</animation>
 			<bottom>0</bottom>
 			<height>380</height>
 			<control type="label">
@@ -410,5 +413,59 @@
 				</control>
 			</control>
 		</control>
+<!-- EPG Info for PVR -->		
+		<control type="group">
+			<visible>!Window.IsVisible(1111)</visible>
+			<visible>!Window.IsVisible(playerprocessinfo)</visible>
+			<visible>[Player.ShowInfo | Window.IsActive(fullscreeninfo)] + VideoPlayer.Content(LiveTV)</visible>
+			<visible>Player.ShowInfo | Window.IsActive(fullscreeninfo) | !Player.Seeking | !Player.DisplayAfterSeek | !Player.Forwarding | !Player.Rewinding | !Player.Paused</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="250">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="100">Hidden</animation>
+			<animation effect="slide" end="0,-20" time="150" condition="VideoPlayer.Content(LiveTV)">conditional</animation>
+			<bottom>0</bottom>
+			<height>880</height>
+			<control type="image">
+				<left>0</left>
+				<width>100%</width>
+				<height>340</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>20</top>
+				<width>200</width>
+				<height>200</height>
+				<aspectratio aligny="center">keep</aspectratio>
+				<texture>$INFO[Player.Icon]</texture>
+			</control>
+			<control type="textbox">
+				<left>240</left>
+				<top>10</top>
+				<right>240</right>
+				<height>260</height>
+				<label fallback="19055">$INFO[VideoPlayer.Plot]</label>
+				<align>justify</align>
+				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
+				<visible>!String.IsEmpty(PVR.EpgEventIcon)</visible>
+			</control>
+			<control type="image">
+				<right>20</right>
+				<top>20</top>
+				<width>200</width>
+				<height>200</height>
+				<aspectratio aligny="center">keep</aspectratio>
+				<texture fallback="DefaultTVShows.png">$INFO[PVR.EpgEventIcon]</texture>
+				<visible>!String.IsEmpty(PVR.EpgEventIcon)</visible>
+			</control>
+			<control type="label">
+				<left>240</left>
+				<top>280</top>
+				<height>25</height>
+				<label>[COLOR button_focus]$LOCALIZE[19031]:[/COLOR] $INFO[VideoPlayer.NextStartTime] - $INFO[VideoPlayer.NextEndTime]: $INFO[VideoPlayer.NextTitle]</label>
+				<visible>VideoPlayer.HasEpg + !RDS.HasRadioText</visible>
+			</control>
+		</control>			
+		
+		
 	</controls>
 </window>

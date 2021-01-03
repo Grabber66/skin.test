@@ -27,7 +27,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<label>$ADDON[script.skinshortcuts 32022]</label>
-			<label2>Allgemeiner Menü Eintrag</label2>
+			<label2>Benutzerdefinierte Einträge</label2>
 			<icon>special://skin/extras/icons/addtile.png</icon>
 			<thumb>special://skin/extras/icons/sidemenu/livetv.png</thumb>
 			<property name="labelID">livetv</property>
@@ -41,13 +41,13 @@
 			<property name="widgetPath">LiveTVWidget</property>
 			<property name="widgetTarget" />
 			<visible>[System.HasPVRAddon] + [!Library.HasContent(music)]</visible>
-			<onclick condition="String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</onclick>
-			<property name="path">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</property>
-			<property name="list">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</property>
+			<onclick condition="String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</onclick>
+			<property name="path">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</property>
+			<property name="list">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</property>
 			<onclick condition="String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(1133)</onclick>
 			<onclick condition="String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],silent)</onclick>
 			<onclick condition="[String.IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | String.IsEqual(Container(9000).ListItem.Property(ParentalControl),no)] | String.IsEqual(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],silent)</onclick>
-			<onclick condition="[String.IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | String.IsEqual(Container(9000).ListItem.Property(ParentalControl),no)] | String.IsEqual(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(TVGuide)</onclick>
+			<onclick condition="[String.IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | String.IsEqual(Container(9000).ListItem.Property(ParentalControl),no)] | String.IsEqual(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(TVChannels)</onclick>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">livetv</property>
 			<property name="group">mainmenu</property>
